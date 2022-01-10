@@ -5,7 +5,31 @@
 @endforeach
 @stop
 @section('center')
+<div class="loading-container">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <ul class="list-unstyled">
+            <li>
+                <img src="{{asset('images/placeholder/loading.png')}}" alt="Alternate Text" height="100" />
 
+            </li>
+            <li>
+
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+
+                </div>
+
+            </li>
+            <li>
+                <p>Loading</p>
+            </li>
+        </ul>
+    </div>
+</div>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/bs_BA/sdk.js#xfbml=1&version=v12.0&appId=580913406273654&autoLogAppEvents=1" nonce="CQkTNfMU"></script>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
@@ -128,7 +152,7 @@
 <p class="text-success">{{session('success')}}</p>
 @endif
 <div id="comments" class="comments-area">
-    <h3 class="comments-title">{{count($detail->comments)}} Comments:</h3>
+    <h3 class="comments-title">{{count($detail->comments)}} Comments: @if(!Auth::user()) Please <a href="{{url('/login')}}">Login</a> or <a href="{{url('/register')}}">Register</a> to comment this post! @endauth</h3>
     
     <ol class="comment-list">
         <li class="comment">
