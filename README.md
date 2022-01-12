@@ -21,7 +21,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Application is complete(CRUD,categories,post,pages,admin settings,roles and permisions,users.Live Prewiew(https://flintstonedesign.com/kristijan/)
+## Application is complete(CRUD,categories,post,pages,admin settings,roles and permisions,users.
+<a href="https://flintstonedesign.com/kristijan">Live Preview</a>
 
 ----------
 
