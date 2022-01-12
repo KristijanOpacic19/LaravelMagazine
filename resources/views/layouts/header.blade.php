@@ -62,6 +62,9 @@
                                             <li><a class="dropdown-item" href="{{ route('logout') }}" title="" onclick="event.preventDefault();
                                                 this.closest('form').submit();">Logout</a></li>
                                             <li><a class="dropdown-item" href="{{url('/user/profile')}}" title="">Profile</a></li>    
+                                            @hasrole('Admin')
+                                            <li><a class="dropdown-item" href="{{url('/admin')}}" > Dashboard </a></li>
+                                            @endhasrole
                                         </form>
                                         </ul>
                                     </li>       
@@ -104,7 +107,6 @@
                         @foreach($categories as $cat)
                         <li><a class="nav-link" href="{{url('category')}}/{{$cat->slug}}" class="text-uppercase">{{$cat->title}}</a></li>
                         @endforeach
-                        
                     </li>
                 </ul>    
 
