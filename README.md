@@ -23,8 +23,8 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Application is complete(CRUD,categories,post,pages,admin settings,roles and permisions,users.
 <a href="https://flintstonedesign.com/kristijan">Live Preview</a>
-Demo admin account for Live Preview
-email:demo@demo.com	
+##Demo admin account for Live Preview<br>
+email:demo@demo.com<br>
 password:admin
 
 ----------
